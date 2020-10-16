@@ -27,9 +27,18 @@ $information = $pdoStat->fetchAll();
 <?php foreach ($information as $contact):?>
 <div class="boite"> 
 <li>
-<?= $contact[ 'nom'] ?><br> <?= $contact['prenom'] ?><br>
-<?= $contact[ 'genre']?>
-<?= $contact[ 'remarque']?>
+    <div class="nom">
+        <?= $contact[ 'nom'] ?> 
+    </div>
+    <div class="prenom">
+        <?= $contact['prenom'] ?>
+    </div>
+    <div class="genre">
+        <?= $contact[ 'genre']?>
+    </div>
+    <div>
+        <?= $contact[ 'remarque']?>
+    </div>
 </li>
 </div>
 <?php endforeach; ?>

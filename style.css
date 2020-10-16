@@ -7,3 +7,15 @@
     color: cornsilk;
 
 }
+.nom {
+    
+    width: 100%;
+    background-color:#03c4a1;
+    padding-bottom: 2em;
+    border: 1em;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: cornsilk;
+    font-size: large;
+
+}
