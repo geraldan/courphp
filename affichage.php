@@ -19,17 +19,19 @@ $information = $pdoStat->fetchAll();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>resultat formulaire</title>
 </head>
 <body>
 <ul class="liste">
 <?php foreach ($information as $contact):?>
+<div class="boite"> 
 <li>
-<?= $contact[ 'nom'] ?> <?= $contact['prenom'] ?>
+<?= $contact[ 'nom'] ?><br> <?= $contact['prenom'] ?><br>
 <?= $contact[ 'genre']?>
 <?= $contact[ 'remarque']?>
 </li>
-
+</div>
 <?php endforeach; ?>
 </ul>
     
